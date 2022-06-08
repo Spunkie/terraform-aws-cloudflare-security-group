@@ -1,5 +1,6 @@
 variable "security_group_id" {
   description = "An existing security group to populate with cloudflare ips as ingress rules."
+  default     = "sg-070ac80b317abca33"
 }
 variable "enabled" {
   description = "Whether to do anything at all, useful if cloudflare is not needed on all environments. Accepts the string 'true' or 'false'."
